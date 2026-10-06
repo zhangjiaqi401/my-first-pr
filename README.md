@@ -16,4 +16,12 @@ Get-WordCount "hello world"        # 输出 2
 ConvertTo-TitleCase "hello world"  # 输出 Hello World
 ```
 
-这两个 funtion 都只依赖 PowerShell，不需要安装额外的软件。
+这两个 function 都只依赖 PowerShell，不需要安装额外的软件。
+
+## 运行测试
+
+测试使用 Windows 自带的 [Pester](https://pester.dev/) 框架：
+
+```powershell
+Invoke-Pester .\tests
+```
